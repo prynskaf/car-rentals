@@ -23,3 +23,8 @@ body {
   width: auto;
   height: auto;
 } */
+
+.only input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+  color: red;
+}

@@ -1,13 +1,19 @@
 import React from "react";
 
-const SearchInput = () => {
+function SearchInput() {
   return (
-    <div>
-      <h2 className="text-center text-[20px] text-gray-400 mb-3">
-        Lets search what you need
+    <div className="mt-5 ">
+      <h2
+        className="text-center text-[20px]
+        text-gray-400 mb-3"
+      >
+        Lets Search what you need
       </h2>
-      <div className="flex justify-center">
-        <div className="flex bg-gray-100 rounded-full p-1 px-3 gap-2 divide-x">
+      <div className="flex justify-center ">
+        <div
+          className="flex  flex-col  md:flex-row justify-center bg-gray-100 p-2 px-2
+         gap-2 rounded-lg md:rounded-full divide-x  flex-wrap"
+        >
           <div className="flex items-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -17,7 +23,7 @@ const SearchInput = () => {
             >
               <path
                 fillRule="evenodd"
-                d="m11.54 22.351.07.04.028.016a.76.76 0 0 0 .723 0l.028-.015.071-.041a16.975 16.975 0 0 0 1.144-.742 19.58 19.58 0 0 0 2.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 0 0-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 0 0 2.682 2.282 16.975 16.975 0 0 0 1.145.742ZM12 13.5a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"
+                d="M11.54 22.351l.07.04.028.016a.76.76 0 00.723 0l.028-.015.071-.041a16.975 16.975 0 001.144-.742 19.58 19.58 0 002.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 00-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 002.682 2.282 16.975 16.975 0 001.145.742zM12 13.5a3 3 0 100-6 3 3 0 000 6z"
                 clipRule="evenodd"
               />
             </svg>
@@ -28,16 +34,13 @@ const SearchInput = () => {
               className="p-2 outline-none bg-transparent"
             />
           </div>
-          <div>
-            <input
-              type="date"
-              className=" type p-2 outline-none bg-transparent text-gray-400 o"
-            />
+          <div className="only">
+            <input type="date" className="p-2 outline-none bg-transparent" />
           </div>
         </div>
       </div>
     </div>
   );
-};
+}
 
 export default SearchInput;

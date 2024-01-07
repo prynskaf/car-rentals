@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "next/legacy/image";
 import React from "react";
 
 const Hero = () => {
@@ -27,9 +27,10 @@ const Hero = () => {
         <Image
           src="/hero.png"
           alt="hero"
-          width={400}
-          height={500}
-          className="w-full object-cover align-middle"
+          width={600}
+          height={700}
+          className="w-full object-contain "
+          priority
         />
       </div>
     </div>

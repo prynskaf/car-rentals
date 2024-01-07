@@ -1,16 +1,17 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/legacy/image";
 import { PiSteeringWheelFill } from "react-icons/pi";
 import { FaGasPump } from "react-icons/fa";
 
 const CarCard = (props: any) => {
-  const { name, price, image, carType, carAvg } = props.car;
+  const [car, setCar] = useState<any>();
+  const { name, price, image, carType, carAvg, carBrand } = props.car;
 
-  // console.log("name:", name);
-  // console.log("price:", price);
-  // console.log("image:", image);
-  // console.log("carType:", carType);
-  // console.log("carAvg:", carAvg);
+  useEffect(() => {
+    if (props.car) {
+      setCar(car);
+    }
+  }, [props.car]);
 
   const imageUrl =
     image &&
@@ -36,8 +37,14 @@ const CarCard = (props: any) => {
         <span className="text-[12px] font-light"> /day</span>
       </h2>
       {imageUrl && (
-        <div className="relative w-[250px] h-[150px] mb-3 object-contain">
-          <Image src={imageUrl} alt={name} layout="fill" objectFit="contain" />
+        <div className="relative w-[150px] h-[150px] mb-3 object-contain">
+          <Image
+            src={imageUrl}
+            alt={name}
+            layout="fill"
+            objectFit="contain"
+            priority
+          />
         </div>
       )}
       <div className="flex justify-around group-hover:hidden">
