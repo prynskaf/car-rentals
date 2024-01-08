@@ -1,5 +1,6 @@
 import Image from "next/legacy/image";
 import React from "react";
+import HeroCarousel from "./HeroCarousel";
 
 const Hero = () => {
   return (
@@ -24,14 +25,7 @@ const Hero = () => {
         </button>
       </div>
       <div>
-        <Image
-          src="/hero.png"
-          alt="hero"
-          width={600}
-          height={700}
-          className="w-full object-contain "
-          priority
-        />
+        <HeroCarousel />
       </div>
     </div>
   );
