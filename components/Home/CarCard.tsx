@@ -37,7 +37,7 @@ const CarCard = (props: any) => {
         <span className="text-[12px] font-light"> /day</span>
       </h2>
       {imageUrl && (
-        <div className="relative w-[150px] h-[150px] mb-3 object-contain">
+        <div className="relative w-[150px] lg:w-[200px]  h-[150px]  lg:h-[200px] mb-3 object-contain">
           <Image
             src={imageUrl}
             alt={name}
