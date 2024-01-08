@@ -1,6 +1,6 @@
-# J Car Rental App
+# Car Rental App
 
-Welcome to the J Car Rental App! This application is built with [Next.js](https://nextjs.org/) for the frontend, [Tailwind CSS](https://tailwindcss.com/) for styling, [Clerk](https://clerk.dev/) for authentication, and [Hygraph](https://hygraph.io/) for database storage.
+Welcome to the Car Rental App! This application is built with [Next.js](https://nextjs.org/) for the frontend, [Tailwind CSS](https://tailwindcss.com/) for styling, [Clerk](https://clerk.dev/) for authentication, and [Hygraph](https://hygraph.io/) for database storage.
 
 ## Features
 
@@ -22,7 +22,7 @@ Welcome to the J Car Rental App! This application is built with [Next.js](https:
 
 ## Getting Started
 
-To run the J Car Rental App locally, follow these steps:
+To run the Car Rental App locally, follow these steps:
 
 1. **Clone the repository:**
 
