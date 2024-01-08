@@ -1,6 +1,6 @@
 # Car Rental App
 
-Welcome to the Car Rental App! This application is built with [Next.js](https://nextjs.org/) for the frontend, [Tailwind CSS](https://tailwindcss.com/) for styling, [Clerk](https://clerk.dev/) for authentication, and [Hygraph](https://hygraph.io/) for database storage.
+Welcome to the Car Rental App! This application is built with [Next.js](https://nextjs.org/) for the frontend, [Tailwind CSS](https://tailwindcss.com/) for styling, [Clerk](https://clerk.dev/) for authentication, [Hygraph](https://hygraph.io/) for database storage, and [TypeScript](https://www.typescriptlang.org/) for enhanced type safety.
 
 ## Features
 
@@ -19,6 +19,8 @@ Welcome to the Car Rental App! This application is built with [Next.js](https://
 - **Clerk**: A developer-first authentication and user management service.
 
 - **Hygraph**: A database solution for storing and managing your application data.
+
+- **TypeScript**: A superset of JavaScript that adds static types to your code for enhanced development experience.
 
 ## Getting Started
 
